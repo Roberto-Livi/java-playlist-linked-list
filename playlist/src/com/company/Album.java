@@ -21,5 +21,14 @@ public class Album {
         return false;
     }
 
+    private Song findSong(String title){
+        for(Song checkedSong: this.songs){
+            if(checkedSong.getTitle().equals(title)){
+                return checkedSong;
+            }
+        }
+        return null;
+    }
+
 
 }
