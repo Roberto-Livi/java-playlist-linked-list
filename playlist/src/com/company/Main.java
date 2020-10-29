@@ -92,6 +92,17 @@ public class Main {
                     }
                     break;
                 case 3:
+                    if(forward) {
+                        if(listIterator.hasPrevious()) {
+                            System.out.println("Now replaying " + listIterator.previous().toString());
+                        } else {
+                            System.out.println("We are at the start of the list");
+                        }
+                    } else {
+                        if(listIterator.hasNext()) {
+                            System.out.println("Now replaying " + listIterator.next().toString());
+                        }
+                    }
                     break;
                 case 4:
 //                    printList(playList);
